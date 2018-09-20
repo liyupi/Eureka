@@ -19,6 +19,6 @@ public class OrderService {
     private RestTemplate restTemplate;
 
     public String getOrder() {
-        return restTemplate.getForObject("http://eureka-provider/getMember", String.class) + "order";
+        return restTemplate.getForObject("http://eureka-provider/member", String.class) + "order";
     }
 }
