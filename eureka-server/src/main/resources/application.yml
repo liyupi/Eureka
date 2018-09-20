@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server # 应用名
+server:
+  port: 8080 # 端口
+eureka:
+  instance:
+    hostname: localhost # 域名
+  client:
+    service-url:
+      defaultZone: http://{eureka.instance.hostname}:{server.port} # 默认地址
+    fetch-registry: false # 是否开启搜索服务，Server不提供服务，故应关闭
+    register-with-eureka: false # 注册自己，Server不需注册自己，故应关闭
