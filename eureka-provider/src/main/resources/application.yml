@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-provider
+    name: eureka-provider # 应用名
 server:
-  port: 8181
+  port: 8181 # 端口
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8180/eureka
+      defaultZone: http://localhost:8180/eureka # 指定Eureka Server地址

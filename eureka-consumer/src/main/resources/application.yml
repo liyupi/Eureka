@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-consumer
+    name: eureka-consumer # 应用名
 server:
-  port: 8182
+  port: 8182 # 端口
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8180/eureka
+      defaultZone: http://localhost:8180/eureka # Eureka Server的地址
