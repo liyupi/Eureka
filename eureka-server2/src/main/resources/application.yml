@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-server2
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8180/eureka # 其他注册中心的地址
+  server:
+    enable-self-preservation: false # 关闭自我保护
+    eviction-interval-timer-in-ms: 10000 # 多久剔除服务
+server:
+  port: 8184

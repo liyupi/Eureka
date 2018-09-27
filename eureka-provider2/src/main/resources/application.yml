@@ -1,9 +1,12 @@
 spring:
   application:
-    name: eureka-provider # Ӧ����
+    name: eureka-provider # 应用名
 server:
-  port: 8183 # �˿�
+  port: 8183 # 端口
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8180/eureka # ָ��Eureka Server��ַ
+      defaultZone: http://localhost:8180/eureka,http://localhost:8184/eureka # 指定Eureka Server地址
+  instance:
+    lease-renewal-interval-in-seconds: 30 # 发送心跳的间隔时间
+    lease-expiration-duration-in-seconds: 30 # 超过多少秒剔除服务
