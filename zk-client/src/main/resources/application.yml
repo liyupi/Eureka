@@ -1,0 +1,8 @@
+server:
+  port: 9590
+spring:
+  application:
+    name: zk-client
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
