@@ -5,4 +5,4 @@ spring:
     name: zk-client
   cloud:
     zookeeper:
-      connect-string: localhost:2181
+      connect-string: localhost:2181 # 指定zk-server地址

@@ -39,5 +39,4 @@ public class ZkClient2Application {
     public static void main(String[] args) {
         SpringApplication.run(ZkClient2Application.class, args);
     }
-
 }
