@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    consul:
+      port: 8500 # Consul Server的端口
+      host: localhost # Consul Server的域名
+  application:
+    name: consul-client
+server:
+  port: 9153

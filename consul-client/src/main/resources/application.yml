@@ -1,0 +1,9 @@
+server:
+  port: 9152
+spring:
+  application:
+    name: consul-client
+  cloud:
+    consul:
+      port: 8500 # 指定Consul Server端口
+      host: localhost # 指定Consul Server域名
