@@ -10,3 +10,5 @@ eureka:
   instance:
     lease-renewal-interval-in-seconds: 30 # 发送心跳的间隔时间
     lease-expiration-duration-in-seconds: 30 # 超过多少秒剔除服务
+swagger:
+  base-package: com.yupi.eurekaprovider2.controller

@@ -7,3 +7,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8180/eureka # Eureka Server的地址
+swagger:
+  base-package: com.yupi.eurekaconsumer.controller

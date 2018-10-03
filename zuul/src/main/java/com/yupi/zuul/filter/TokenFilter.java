@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Description:
  * @Modified By:
  */
-@Component
+//@Component
 public class TokenFilter extends ZuulFilter {
 
     @Value("${server.port}")
